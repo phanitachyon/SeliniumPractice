@@ -11,8 +11,7 @@ public class DownloadLife360Button {
     @Test
     public void downloadLife360ForFree() {
 
-        System.setProperty("webdriver.chrome.driver",
-                "C:\\Users\\MohanSai\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\MohanSai\\Downloads\\chromedriver_win32\\chromedriver.exe");
         ChromeDriver driver=new ChromeDriver();
         driver.get("https://www.qa.life360.com/intl/");
         WebDriverWait wait=new WebDriverWait(driver,10);
