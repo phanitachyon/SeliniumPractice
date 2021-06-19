@@ -4,8 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-
 import java.util.ArrayList;
+
 /*
 Title:DownloadLife360Button
 1.Navigate to life360 website
@@ -18,21 +18,26 @@ public class DownloadLife360Button {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\MohanSai\\Downloads\\chromedriver_win32\\chromedriver.exe");
         ChromeDriver driver=new ChromeDriver();
+        //Navigate to life 360 website
         driver.get("https://www.qa.life360.com/intl/");
+        //applying wait
         WebDriverWait wait=new WebDriverWait(driver,10);
+        //Click on download
         driver.findElement(By.xpath("/html/body/header/div/div/div/a[1]")).click();
+        //Navigate to next tab
         ArrayList<String> newTb = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(newTb.get(1));
+        //Xpath for the required text
         String actuvalText = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/h1")).getText();
         String originalText = "Download Life360 for free";
-
+         //Print output
         if(actuvalText.equals(originalText)) {
             System.out.println("Test Passes and same text displayed");
         }else {
             System.out.println("Test case failed same text not displayed");
-
-            driver.close();
         }
-    }
-}
+        //Close window
+        driver.close();
+        }
+        }
 
