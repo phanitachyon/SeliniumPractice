@@ -6,7 +6,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
-
+/*
+Title:DownloadLife360Button
+1.Navigate to life360 website
+2.click on download button
+3.validate download life360 text
+ */
 public class DownloadLife360Button {
     @Test
     public void downloadLife360ForFree() {
