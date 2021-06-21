@@ -13,6 +13,8 @@ Title:DownloadLife360Button
 3.validate download life360 text
  */
 public class DownloadLife360Button {
+    private String actualText;
+    private String originalText="Download Life360 for free";
     @Test
     public void downloadLife360ForFree() {
 
@@ -28,10 +30,10 @@ public class DownloadLife360Button {
         ArrayList<String> newTb = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(newTb.get(1));
         //Xpath for the required text
-        String actuvalText = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/h1")).getText();
-        String originalText = "Download Life360 for free";
+         actualText = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/h1")).getText();
+         originalText = "Download Life360 for free";
          //Print output
-        if(actuvalText.equals(originalText)) {
+        if(actualText.equals(originalText)) {
             System.out.println("Test Passes and same text displayed");
         }else {
             System.out.println("Test case failed same text not displayed");
