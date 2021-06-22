@@ -11,6 +11,7 @@ Title:Validate Download Life360 for free Text on Download screen
 1.Navigate to life360 website
 2.click on download button
 3.validate download life360 text
+@ author mohan sai
  */
 public class DownloadLife360Button {
     private String actualText;
