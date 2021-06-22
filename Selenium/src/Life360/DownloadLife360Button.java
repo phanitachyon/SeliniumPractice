@@ -17,7 +17,7 @@ public class DownloadLife360Button {
     private String actualText;
     private String originalText="Download Life360 for free";
     @Test
-    public void downloadLife360ForFree() {
+    public void validateDownloadLife360ForFreeText() {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\MohanSai\\Downloads\\chromedriver_win32\\chromedriver.exe");
         ChromeDriver driver=new ChromeDriver();
