@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 
 /*
-Title: Validate DownloadLife360 for free Text on Download screen
+Title:Validate Download Life360 for free Text on Download screen
 1.Navigate to life360 website
 2.click on download button
 3.validate download life360 text
