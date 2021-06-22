@@ -27,7 +27,7 @@ public class DownloadLife360Button {
         WebDriverWait wait=new WebDriverWait(driver,10);
         // Click on download
         driver.findElement(By.xpath("/html/body/header/div/div/div/a[1]")).click();
-        // Navigate to next tab
+        // Navigating to next tab using window handles method
         ArrayList<String> newTb = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(newTb.get(1));
         // Xpath for the required text
