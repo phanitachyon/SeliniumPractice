@@ -36,7 +36,7 @@ public class DownloadLife360Button {
         if(actualText.equals(originalText)) {
             System.out.println("Test Passes and same text displayed");
         }else {
-            System.out.println("Test case failed same text not displayed");
+            System.out.println("Test failed same text not displayed");
         }
         // Close window
         driver.close();
