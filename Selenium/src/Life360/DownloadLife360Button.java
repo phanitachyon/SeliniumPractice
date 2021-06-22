@@ -32,7 +32,6 @@ public class DownloadLife360Button {
         driver.switchTo().window(newTb.get(1));
         // Xpath for the required text
          actualText = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/h1")).getText();
-         originalText = "Download Life360 for free";
          // Print output
         if(actualText.equals(originalText)) {
             System.out.println("Test Passes and same text displayed");
