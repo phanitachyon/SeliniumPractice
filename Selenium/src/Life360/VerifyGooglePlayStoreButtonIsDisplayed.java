@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class VerifyGooglePlayStoreButtonIsDisplayed {
-   
+
     public void test1() {
         System.setProperty("webdriver.chrome.driver",
                 "C:\\Users\\MohanSai\\Downloads\\chromedriver_win32\\chromedriver.exe");
@@ -23,6 +23,5 @@ public class VerifyGooglePlayStoreButtonIsDisplayed {
 
         }
     }
-
 }
 
