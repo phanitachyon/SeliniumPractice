@@ -21,8 +21,4 @@ public class ValidateGooglePlayStoreButtonIsDisplayedKrushival {
             System.out.println("Google play store Button is not Displayed");
         }
     }
-
 }
-
-
-
